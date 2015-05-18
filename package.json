@@ -1,7 +1,9 @@
 {
   "name": "flicktheq",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "flickrapi": "^0.3.32"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
