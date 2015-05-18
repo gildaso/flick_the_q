@@ -5,7 +5,8 @@ version 0.11.1.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `node server/server.js` to launch the server that use the Flickr API
+Run `grunt serve` for preview.
 
 ## Testing
 
