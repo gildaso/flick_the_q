@@ -1,0 +1,16 @@
+.header form{
+    margin-bottom: 5px;
+}
+
+.photos-container ul.movies{
+    list-style: none;
+}
+
+.photos-container ul.movies > li{
+    margin-top: 7px;
+    padding: 5px;
+}
+
+.photos-container a{
+    cursor: pointer;
+}
