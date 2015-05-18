@@ -15,7 +15,7 @@ app.all('*', function(req, res, next) {
 app.get('/search', function (req, res) {
   var query = req.query["q"];
   var page = (req.query["page"]) ? req.query["page"] : 1;
-  var per_page = (req.query["per_page"]) ? req.query["per_page"] : 15
+  var per_page = (req.query["per_page"]) ? req.query["per_page"] : 24
 
   // Flickr search API - sends the results from a classic tag search
   Flickr.tokenOnly(flickrOptions, function(error, flickr) {
