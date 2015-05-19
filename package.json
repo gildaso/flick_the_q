@@ -2,7 +2,8 @@
   "name": "flicktheq",
   "version": "0.0.0",
   "dependencies": {
-    "flickrapi": "^0.3.32"
+    "flickrapi": "^0.3.32",
+    "express": "^4.12.3"
   },
   "repository": {},
   "devDependencies": {

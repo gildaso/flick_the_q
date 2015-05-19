@@ -11,7 +11,7 @@ angular.module('flickTheQApp')
   .controller('MainCtrl', function ($scope, $routeParams, serviceFlickr) {
     $scope.query = $routeParams.query;
     if (!$scope.query) {
-      $scope.query = "coffee";
+      $scope.query = 'coffee';
     }
     $scope.pageNumber = 0;
     $scope.photos = [];

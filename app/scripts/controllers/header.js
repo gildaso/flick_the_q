@@ -9,8 +9,8 @@
  */
 angular.module('flickTheQApp')
   .controller('HeaderCtrl', function ($scope, $location) {
-    $scope.query="";
+    $scope.query='';
     $scope.searchAction= function(){
-      $location.path("/search/" + $scope.query );
+      $location.path('/search/' + $scope.query );
     }
   });

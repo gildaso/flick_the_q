@@ -14,11 +14,11 @@ angular.module('flickTheQApp')
       transclude: true,
       replace: true,
       scope:{
-        loading: "=loading"
+        loading: '=loading'
       },
-      compile: function compile(element, attrs, transclude){
+      compile: function compile(element){
         var spinner = new Spinner().spin();
-        var loadingContainer = element.find(".loading-container")[0];
+        var loadingContainer = element.find('.loading-container')[0];
         loadingContainer.appendChild(spinner.el);
       }
     };
