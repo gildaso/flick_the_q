@@ -1,15 +1,15 @@
 var express = require('express');
 var app = express();
 app.use(express.static("" + __dirname + "/dist"));
-app.all('*', function(res, next) {
+app.all('*', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-app.listen(process.env.PORT || 9000, function () {
-  console.log("Listening 9000")
-});
 
+app.listen(process.env.PORT || 9000, function () {
+  console.log("Listening " + process.env.PORT);
+});
 
 
 var Flickr = require("flickrapi"),
