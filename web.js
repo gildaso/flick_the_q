@@ -7,9 +7,9 @@ app.all('*', function(req, res, next) {
   next();
 });
 
-app.listen(process.env.PORT || 9000, function () {
-  console.log("Listening " + process.env.PORT);
-});
+//app.listen(process.env.PORT || 9000, function () {
+//  console.log("Listening " + process.env.PORT);
+//});
 
 
 var Flickr = require("flickrapi"),
@@ -18,15 +18,15 @@ var Flickr = require("flickrapi"),
     secret: "e62ba9fc0032c285"
   };
 
-var app2 = require('express')();
+//var app2 = require('express')();
 
-app2.all('*', function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+//app2.all('*', function(req, res, next) {
+//  res.header("Access-Control-Allow-Origin", "*");
+//  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//  next();
+//});
 
-app2.get('/search', function (req, res) {
+app.get('/search/flickrapi', function (req, res) {
   var query = req.query["q"];
   var page = (req.query["page"]) ? req.query["page"] : 1;
   var per_page = (req.query["per_page"]) ? req.query["per_page"] : 24
@@ -46,7 +46,10 @@ app2.get('/search', function (req, res) {
   });
 
 });
-
-app2.listen(3000, function () {
-  console.log("Listening 3000")
+app.listen(process.env.PORT || 9000, function () {
+  console.log("Listening " + process.env.PORT);
 });
+
+//app2.listen(3000, function () {
+//  console.log("Listening 3000")
+//});

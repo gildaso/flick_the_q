@@ -12,7 +12,7 @@ angular.module('flickTheQApp')
     // Public API
     return{
       search: function(query, page, perPage){
-        return $http.get("https://localhost:3000/search?q=" + query + "&page=" + page + "&per_page=" + perPage);
+        return $http.get("/search/flickrapi?q=" + query + "&page=" + page + "&per_page=" + perPage);
       }
     };
   });
