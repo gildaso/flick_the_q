@@ -3,7 +3,7 @@
     <div ng-repeat="photo in photos" class="col-md-4 col-sm-6 col-lg-2">
 
       <img ng-src="http://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg"
-           width="100%" height="300"/>
+           width="100%" height="250"/>
       <div class="wrapped" ng-bind="photo.title"></div>
     </div>
   </div>
