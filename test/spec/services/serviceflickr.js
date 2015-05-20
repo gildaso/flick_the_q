@@ -15,6 +15,7 @@ describe('Service: serviceFlickr', function () {
   it('should send a request to the right URL when calling the search function', function () {
     serviceFlickr.search("coffee",1,30);
     httpBackend.expectGET('https://localhost:3000/search?q=coffee&page=1&per_page=30').respond({});
+    //httpBackend.expectGET('/search/flickrapi?q=coffee&page=1&per_page=30').respond({});
     httpBackend.flush();
   });
 

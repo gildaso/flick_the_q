@@ -17,9 +17,9 @@ angular.module('flickTheQApp')
         loading: '=loading'
       },
       compile: function compile(element){
-        //var spinner = new Spinner().spin();
-        //var loadingContainer = element.find('.loading-container')[0];
-        //loadingContainer.appendChild(spinner.el);
+        var spinner = new Spinner().spin();
+        var loadingContainer = element.find('.loading-container')[0];
+        loadingContainer.appendChild(spinner.el);
       }
     };
   });

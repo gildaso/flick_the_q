@@ -10,6 +10,7 @@
 angular.module('flickTheQApp')
   .controller('MainCtrl', function ($scope, $routeParams, serviceFlickr) {
     $scope.query = $routeParams.query;
+    // by default, we search all the photos tagged 'coffee'
     if (!$scope.query) {
       $scope.query = 'coffee';
     }

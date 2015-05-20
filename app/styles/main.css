@@ -7,3 +7,22 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
+
+.header-elements {
+  margin-top:10px;
+}
+
+h3{
+  color:blue;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  h3{
+    color: violet;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
