@@ -6,6 +6,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  heigth: 25px;
 }
 
 .header-elements {
