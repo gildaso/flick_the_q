@@ -24,6 +24,9 @@ angular.module('flickTheQApp')
       serviceFlickr.search($scope.query, $scope.pageNumber, 24).success(function (data) {
         $scope.loading = false;
         for (var i = 0; i < data.photos.photo.length; i++) {
+          if(!data.photos.photo[i].title) {
+            data.photos.photo[i].title = " ";
+          }
           $scope.photos.push(data.photos.photo[i]);
         }
       });

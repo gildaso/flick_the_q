@@ -38,6 +38,7 @@ app.get('/search/flickrapi', function (req, res) {
       page: page,
       per_page: per_page,
       in_gallery : true,
+      sort: "relevance",
       media: "photos"
     }, function(err, result) {
       if(err) { throw new Error(err); }
